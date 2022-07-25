@@ -1,0 +1,50 @@
+.project {
+    margin: 20px 0;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project1 {
+    flex: 0 0 30.33%;
+    max-width: 30.33%;
+    margin: 0 10px;
+}
+
+.project-box {
+    width: 100%;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.project-img:hover {
+    transform: scale(1.05);
+}
+
+.project-img {
+    border-radius: 11px;
+    border: 5px solid var(--bg-black-50);
+    background-color: whitesmoke;
+    height: 220px;
+}
+
+.project-img img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 414px) {
+    .project {
+        display: block;
+    }
+    
+    .project1 {
+        padding: 0 15px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}

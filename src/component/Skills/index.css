@@ -1,0 +1,46 @@
+.my-skills-box {
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+}
+
+.skill-flex {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.ppp{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kills-box {
+    margin: 10px 0;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.kills-item {
+    height: 100%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.kills-item:hover {
+    transform: scale(1.05);
+    color: var(--skin-color);
+}
+
+.kills-item i {
+    font-size: 65px;
+}
+
+.kills-item h5 {
+    font-size: 15px;
+    font-weight: 700;
+}

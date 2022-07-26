@@ -3,6 +3,7 @@ import image from "../../assets/about-img.jpg";
 import AboutComp from "../../component/About";
 import ProjectComp from "../../component/Projects";
 import SkillsComp from "../../component/Skills";
+import ContactComp from "../../component/Contact";
 import Typewriter from "typewriter-effect";
 import { FaHome } from "react-icons/fa";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -12,11 +13,6 @@ import { GoTasklist } from "react-icons/go";
 import "./index.css";
 
 function Home() {
-  // import HomeIcon from "@mui/icons-material/Home";
-  // import PersonIcon from "@mui/icons-material/Person";
-  // import ListIcon from "@mui/icons-material/List";
-  // import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
-  // import ChatIcon from "@mui/icons-material/Chat";
   const [page, setPage] = useState("home");
   const [isOpen, setIsOpen] = useState(true);
   const toggle = () => setIsOpen(!isOpen);
@@ -125,6 +121,14 @@ function Home() {
             <div className="container">
               <div className="row">
                 <SkillsComp />
+              </div>
+            </div>
+          </div>
+        ) : page === "contact" ? (
+          <div className="about section">
+            <div className="container">
+              <div className="row">
+                <ContactComp />
               </div>
             </div>
           </div>

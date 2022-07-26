@@ -292,7 +292,6 @@
 }
 
 .skills {
-    height: 100vh;
     padding: 0 30px;
     flex: 0 0 100%;
     max-width: 100%;
@@ -395,6 +394,11 @@
     .home .home-img {
         display: none;
     }
+
+    .content-box-25 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -437,6 +441,15 @@
     .kills-box {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+
+    .content-box-25 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .skill-flex {
+        padding: 100px 0;
     }
 }
 

@@ -9,7 +9,7 @@ export default function V2about() {
       <div className="v2about-column">
         <div className="about-title">
           <h2>About Me</h2>
-          <h3>/ahFOO-ah dEb-ruh/</h3>
+          <p>/ahFOO-ah dEb-ruh/</p>
         </div>
         <div className="v2about-box">
           <div className="v2about-item-40">

@@ -9,7 +9,7 @@ function SkillsComp() {
   return (
     <div style={{ width: "100%" }}>
       <div style={{ position: "absolute" }} className="section-title padd-15">
-        <h2>Skills</h2>
+        <h2>Skllis</h2>
       </div>
 
       <div className="my-skills-box padd-15">

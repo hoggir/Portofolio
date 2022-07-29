@@ -46,13 +46,17 @@
     max-width: 40%;
     display: flex;
     justify-content: center;
-    background-color: tomato;
 }
 
 .v2about-img-con {
     height: 100%;
     width: 100%;
-    background-color: var(--yellow-accent);
+}
+
+.v2about-img-con img {
+    margin: auto;
+    padding-top: 55px;
+    width: 100%;
 }
 
 .v2about-item-60 {
@@ -66,4 +70,30 @@
     font-size: 20px;
     letter-spacing: 1.5px;
     line-height: 32px;
+}
+
+.v2about-item-icon-box {
+    display: flex;
+}
+
+.v2about-item-icon-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    flex-wrap: nowrap;
+}
+
+.v2about-item-icon-item a {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.v2about-item-icon-item i {
+    color: var(--white-main-text);
+    font-size: 50px;
+}
+
+.v2about-item-icon-item i:hover {
+    color: var(--yellow-accent);
 }

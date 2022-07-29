@@ -1,10 +1,10 @@
 import React from "react";
-import Gome from "./hello";
+import Jumbotron from "./Jumbotron";
 
-export default function Home () {
+export default function Portfolio() {
   return (
     <div className="container">
-      <Gome />
+      <Jumbotron />
     </div>
-  )
+  );
 }

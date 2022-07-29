@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
+import V2jumbotron from "../../../component/v2/Jumbotron";
 import "./index.css";
 
 function V2Home() {
@@ -12,7 +12,7 @@ function V2Home() {
         <span></span>
       </div>
       <div className={isOpen ? "navbar-collapse" : "navbar"}>
-        <Container>
+        <div className="container">
           <div className="navbar-menu">
             <div className="navbar-item">
               <a href="#homr">Home</a>
@@ -21,23 +21,14 @@ function V2Home() {
               <a href="#ct">Contact</a>
             </div>
           </div>
-        </Container>
+        </div>
       </div>
       <div className="v2home v2section">
-        <Container>
-          <h1>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            recusandae voluptatem possimus labore! Aperiam corporis architecto
-            voluptatem repellat magnam dicta sequi minus laboriosam voluptatibus
-            accusamus, inventore esse reprehenderit aut repellendus!
-          </h1>
-          <h1>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            recusandae voluptatem possimus labore! Aperiam corporis architecto
-            voluptatem repellat magnam dicta sequi minus laboriosam voluptatibus
-            accusamus, inventore esse reprehenderit aut repellendus!
-          </h1>
-        </Container>
+        <div className="container">
+          <div className="v2jumbotron">
+            <V2jumbotron />
+          </div>
+        </div>
       </div>
     </div>
   );

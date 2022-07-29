@@ -134,6 +134,14 @@
   align-items: center;
 }
 
+.v2about {
+  min-height: 100vh;
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  align-items: center;
+}
+
 
 
 @media screen and (max-width: 500px) {
@@ -218,4 +226,9 @@
   .navbar-item a:hover {
     color: var(--yellow-accent);
   }
+
+  .v2jumbotron-item span {
+    font-size: 40px;
+}
+
 }

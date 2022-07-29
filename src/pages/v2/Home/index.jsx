@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import V2jumbotron from "../../../component/v2/Jumbotron";
+import V2about from "../../../component/v2/About";
 import "./index.css";
 
 function V2Home() {
@@ -15,18 +16,21 @@ function V2Home() {
         <div className="container">
           <div className="navbar-menu">
             <div className="navbar-item">
-              <a href="#homr">Home</a>
-              <a href="#ab">About</a>
-              <a href="#pj">Projects</a>
-              <a href="#ct">Contact</a>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
             </div>
           </div>
         </div>
       </div>
       <div className="v2home v2section">
         <div className="container">
-          <div className="v2jumbotron">
+          <div id="home" className="v2jumbotron">
             <V2jumbotron />
+          </div>
+          <div id="about" className="v2about">
+            <V2about />
           </div>
         </div>
       </div>

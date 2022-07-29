@@ -3,7 +3,7 @@ import Gome from "./hello";
 
 export default function Home () {
   return (
-    <div>
+    <div className="container">
       <Gome />
     </div>
   )

@@ -8,8 +8,8 @@ const Page = () => {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/v2" element={<V2Home />} />
+          <Route exact path="/" element={<V2Home />} />
+          <Route exact path="/v2" element={<Home />} />
         </Routes>
       </Router>
     </div>

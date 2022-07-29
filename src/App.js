@@ -1,10 +1,15 @@
 import React from "react";
-import Page from "./pages";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import V2Home from "./pages/v2/Home";
 
 function App() {
   return (
     <div className="App">
-      <Page />
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<V2Home />} />
+      </Routes>
+    </Router>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import V2jumbotron from "../../../component/v2/Jumbotron";
 import V2about from "../../../component/v2/About";
 import V2skills from "../../../component/v2/Skills";
 import V2project from "../../../component/v2/Project";
+import V2contact from "../../../component/v2/Contact";
 import "./index.css";
 
 function V2Home() {
@@ -40,6 +41,9 @@ function V2Home() {
           </div>
           <div id="projects" className="v2skills">
             <V2project />
+          </div>
+          <div id="projects" className="v2skills">
+            <V2contact />
           </div>
         </div>
       </div>

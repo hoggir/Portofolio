@@ -34,7 +34,7 @@ function V2Home() {
           <div id="about" className="v2about">
             <V2about />
           </div>
-          <div id="skills" className="v2about">
+          <div id="skills" className="v2skills">
             <V2skills />
           </div>
         </div>

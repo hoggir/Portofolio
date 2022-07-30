@@ -142,7 +142,13 @@
   align-items: center;
 }
 
-
+.v2skills {
+  min-height: 100vh;
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  align-items: center;
+}
 
 @media screen and (max-width: 500px) {
   .tog {

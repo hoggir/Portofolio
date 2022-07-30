@@ -1,0 +1,141 @@
+.v2projects-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+
+.v2projects-box-display {
+    display: flex;
+    height: 100%;
+}
+
+.v2projects-box-left {
+    flex: 0 0 50%;
+    max-width: 50%;
+    flex-wrap: nowrap;
+}
+
+.v2projects-box-left-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v2projects-box-left-img img {
+    width: 90%;
+}
+
+.v2projects-box-right {
+    flex: 0 0 50%;
+    max-width: 50%;
+    flex-wrap: nowrap;
+}
+
+.v2projects-box-right-item h3 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--white-main-text);
+    font-size: 23.4px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.v2projects-box-right-item p {
+    margin-top: -12px;
+    letter-spacing: 1.5px;
+    color: var(--white-main-text);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.v2projects-box-right-item h4 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--white-main-text);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.v2projects-box-right-item-icon {
+    margin: 20px 0;
+    display: flex;
+}
+
+.v2projects-box-right-item-icon-item {
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+}
+
+.v2projects-box-right-item-icon-item-svg {
+    display: flex;
+    justify-content: center;
+}
+
+.v2projects-box-right-item-icon-item-svg svg {
+    height: 40px;
+}
+
+.v2projects-box-right-item-icon-item-svg svg path {
+    fill: var(--white-main-text);
+    transition: all 0.3s ease;
+}
+
+.v2projects-box-right-item a {
+    color: var(--white-main-text);
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.v2projects-box-right-item a:hover {
+    text-decoration: none;
+    color: var(--skin-color);
+}
+
+@media screen and (max-width: 500px) {
+
+    .v2projects-box-display {
+        flex-direction: column;
+    }
+
+    .v2projects-box-left {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .v2projects-box-right {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .v2projects-box-right-item h3 {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .v2projects-box-right-item p {
+        text-align: center;
+    }
+
+    .v2projects-box-right-item h4 {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .v2projects-box-right-item-icon {
+        justify-content: center;
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+
+    .v2projects-box-right-item-icon-item {
+        margin: 0 7px;
+    }
+
+    .v2projects-box-right-item {
+        text-align: center;
+    }
+}

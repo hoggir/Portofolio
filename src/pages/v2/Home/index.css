@@ -3,9 +3,7 @@
 :root 
 {
   --dark-bg: #030200;
-
   --yellow-accent: #f2eb3a;
-
   --white-main-text: #fafafa;
   --white-second-text: #b1b1b1;
 }
@@ -148,6 +146,43 @@
   flex: 0 0 100%;
   max-width: 100%;
   align-items: center;
+}
+
+.back-to-top {
+  padding: 50px 0;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.back-to-top a {
+  color: var(--white-main-text);
+  font-size: 20px;
+  letter-spacing: 1.5;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+
+.back-to-top:hover {
+  transform: scale(1.05);
+}
+
+.back-to-top a:hover {
+  color: var(--yellow-accent);
+}
+
+.design-by {
+  padding: 5px 0;
+  color: var(--white-main-text);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 500px) {

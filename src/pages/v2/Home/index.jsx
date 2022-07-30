@@ -42,11 +42,15 @@ function V2Home() {
           <div id="projects" className="v2skills">
             <V2project />
           </div>
-          <div id="projects" className="v2skills">
+          <div id="contact" className="v2skills">
             <V2contact />
           </div>
         </div>
       </div>
+      <div className="back-to-top">
+        <a href="#home">back to top</a>
+      </div>
+      <div className="design-by">MADE BY FADEL GIRAS 2022</div>
     </div>
   );
 }

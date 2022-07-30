@@ -11,12 +11,13 @@
   --text-black-700: #504e70;
   --skin-color: #ec1839;
   --skin-color-yellow: #FFA818;
-
+  --dark-bg: #030200;
   --bg-dark-900: #030200;
 }
 
 body
 {
+  background-color: var(--dark-bg);
   line-height: 1.5;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;

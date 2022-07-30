@@ -4,6 +4,11 @@
     flex-wrap: nowrap;
 }
 
+.pd-30 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .v2projects-box-display {
     display: flex;
     height: 100%;
@@ -16,6 +21,7 @@
 }
 
 .v2projects-box-left-img {
+    padding: 0 10px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -30,6 +36,7 @@
     flex: 0 0 50%;
     max-width: 50%;
     flex-wrap: nowrap;
+    padding: 0 10px;
 }
 
 .v2projects-box-right-item h3 {

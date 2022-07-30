@@ -11,7 +11,7 @@ export default function V2project() {
         <div className="about-title">
           <h2>projects</h2>
         </div>
-        <div className="v2projects-box">
+        <div className="pd-30 v2projects-box">
           <div className="v2projects-box-display">
             <div className="v2projects-box-left">
               <div className="v2projects-box-left-img">
@@ -90,7 +90,7 @@ export default function V2project() {
                     </div>
                   </div>
                 </div>
-                <a href="github.com">GITHUB</a>
+                <a href="https://github.com/hoggir/eduwork-studikasus-frontend">GITHUB</a>
               </div>
             </div>
           </div>

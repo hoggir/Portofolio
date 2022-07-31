@@ -39,9 +39,11 @@ export default function V2contact() {
           </div>
           <div className="v2contact-box-50">
             <div className="v2contact-text">
-              <p>You have any questions ? I'm at your service</p>
+              <p className="my-service">
+                You have any questions ? I'm at your service
+              </p>
               <span>Straight shot to my inbox:</span>
-              <p>FADELPOPEYE@GMAIL.COM</p>
+              <p className="my-email">FADELPOPEYE@GMAIL.COM</p>
               <button>get in touch</button>
             </div>
           </div>

@@ -261,6 +261,7 @@
 
     .v2projects-box-display-reverse {
         flex-direction: column-reverse;
+
     }
 
     .v2projects-box-right-item-reverse h3 {
@@ -282,7 +283,7 @@
         justify-content: center;
     }
 
-    .v2projects-box-right-item-reverse a {
+    .v2projects-box-right-item-reverse {
         text-align: center;
     }
 

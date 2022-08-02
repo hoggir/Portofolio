@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import "./index.css";
+import "./glitch.css";
 
 export default function V2jumbotron() {
   return (
@@ -18,7 +19,11 @@ export default function V2jumbotron() {
         </span>
       </div>
       <div>
-        <span>full-stack</span>
+        <div className="stack">
+          <span className="index-0">full-stack</span>
+          <span className="index-1">full-stack</span>
+          <span className="index-2">full-stack</span>
+        </div>
       </div>
       <div>
         <span>web developer</span>

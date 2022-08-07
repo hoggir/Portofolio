@@ -28,6 +28,7 @@ function V2Home() {
           </div>
         </div>
       </div>
+
       <div className="v2home v2section">
         <div className="container">
           <div id="home" className="v2jumbotron">
@@ -50,6 +51,7 @@ function V2Home() {
       <div className="back-to-top">
         <a href="#home">back to top</a>
       </div>
+
       <div className="design-by">MADE BY FADEL GIRAS 2022</div>
     </div>
   );

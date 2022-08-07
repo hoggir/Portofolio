@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image from "../../../assets/pic-me.png";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaRegFilePdf, FaTwitter, FaInstagram } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./index.css";
 
 export default function V2about() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="v2about-item">
       <div className="v2about-column">
@@ -12,12 +18,12 @@ export default function V2about() {
           <p>/ahGI-ah dRAb-ruS/</p>
         </div>
         <div className="v2about-box">
-          <div className="v2about-item-40">
+          <div className="v2about-item-40" data-aos="fade-right">
             <div className="v2about-img-con">
               <img src={image} alt="" />
             </div>
           </div>
-          <div className="v2about-item-60">
+          <div className="v2about-item-60" data-aos="fade-left">
             <p>
               Hello World! I'm Fadel Giras, a Full-Stack Web Developer based in
               Yogyakarta. I love to combine the world of logic and creative
@@ -33,7 +39,7 @@ export default function V2about() {
               I'm excited to make the leap and keep perfecting my skills with
               the right company. Check me out at:
             </p>
-            <div className="v2about-item-icon-box">
+            <div className="v2about-item-icon-box" data-aos="fade-up">
               <div className="v2about-item-icon-item">
                 <a href="https://github.com/hoggir">
                   <i>
@@ -42,9 +48,13 @@ export default function V2about() {
                 </a>
               </div>
               <div className="v2about-item-icon-item">
-                <a href="https://www.linkedin.com/in/fadel-giras-981407229/">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1fKGwHzi3W4hm4DxUgx4PUUShdIAv-LrS/view?usp=sharing"
+                >
                   <i>
-                    <FaLinkedin />
+                    <FaRegFilePdf />
                   </i>
                 </a>
               </div>

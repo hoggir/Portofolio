@@ -20,12 +20,12 @@ export default function V2project() {
         </div>
         <div className="pd-30 v2projects-box">
           <div className="v2projects-box-display">
-            <div className="v2projects-box-left" data-aos="fade-right">
+            <div className="v2projects-box-left" data-aos="fade-up">
               <div className="v2projects-box-left-img">
                 <img src={project1} alt="" />
               </div>
             </div>
-            <div className="v2projects-box-right" data-aos="fade-left">
+            <div className="v2projects-box-right" data-aos="fade-down">
               <div className="v2projects-box-right-item">
                 <h3>OnFood</h3>
                 <p>Are you hungry?</p>
@@ -107,7 +107,7 @@ export default function V2project() {
 
         <div className="pd-30 v2projects-box">
           <div className="v2projects-box-display-reverse">
-            <div className="v2projects-box-right" data-aos="fade-right">
+            <div className="v2projects-box-right" data-aos="fade-down">
               <div className="v2projects-box-right-item-reverse">
                 <h3>OnFood REST-API</h3>
                 <p>
@@ -152,7 +152,7 @@ export default function V2project() {
                 </a>
               </div>
             </div>
-            <div className="v2projects-box-left" data-aos="fade-left">
+            <div className="v2projects-box-left" data-aos="fade-up">
               <div className="v2projects-box-left-img">
                 <img src={project2} alt="" />
               </div>

@@ -23,7 +23,7 @@ export default function V2about() {
               <img src={image} alt="" />
             </div>
           </div>
-          <div className="v2about-item-60" data-aos="fade-left">
+          <div className="v2about-item-60" data-aos="fade-down">
             <p>
               Hello World! I'm Fadel Giras, a Full-Stack Web Developer based in
               Yogyakarta. I love to combine the world of logic and creative

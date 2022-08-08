@@ -1,6 +1,7 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 import Form from "react-bootstrap/Form";
+import Swal from "sweetalert2";
 import "./index.css";
 
 export default function V2contact() {
@@ -16,9 +17,19 @@ export default function V2contact() {
       )
       .then(
         (result) => {
+          Swal.fire(
+            "Message Delivered!",
+            "Your message was sent successfully",
+            "success"
+          );
           console.log(result.text);
         },
         (error) => {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+          });
           console.log(error.text);
         }
       );
@@ -60,7 +71,9 @@ export default function V2contact() {
                   name="message"
                 />
               </div>
-              <button type="submit" className="btn-sne">get in touch</button>
+              <button type="submit" className="btn-sne">
+                get in touch
+              </button>
             </Form>
           </div>
           <div className="v2contact-box-50">

@@ -1,6 +1,7 @@
 .bg-port {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     padding: 70px 0;
@@ -142,5 +143,23 @@
     .test-con-left-con-col {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .test-con-left-action {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .test-con-left-action span {
+        padding: 10px 0;
+    }
+
+    .test-con-left-con-col {
+        text-align: center;
+    }
+
+    .test-con-left-con-col h1 {
+        font-size: 30px;
     }
 }

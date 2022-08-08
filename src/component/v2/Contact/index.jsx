@@ -41,9 +41,9 @@ export default function V2contact() {
         <div className="about-title">
           <h2>contact me</h2>
         </div>
-        <div className="v2contact-box">
-          <div className="v2contact-box-50">
-            <Form onSubmit={sendEmail}>
+        <Form onSubmit={sendEmail}>
+          <div className="v2contact-box">
+            <div className="v2contact-box-50">
               <div className="v2contact-form">
                 <Form.Control
                   style={{ height: 46 }}
@@ -74,19 +74,21 @@ export default function V2contact() {
               <button type="submit" className="btn-sne">
                 get in touch
               </button>
-            </Form>
-          </div>
-          <div className="v2contact-box-50">
-            <div className="v2contact-text">
-              <p className="my-service">
-                You have any questions ? I'm at your service
-              </p>
-              <span>Straight shot to my inbox:</span>
-              <p className="my-email">FADELPOPEYE@GMAIL.COM</p>
-              <button type="submit">get in touch</button>
+            </div>
+            <div className="v2contact-box-50">
+              <div className="v2contact-text">
+                <p className="my-service">
+                  You have any questions ? I'm at your service
+                </p>
+                <span>Straight shot to my inbox:</span>
+                <p className="my-email">FADELPOPEYE@GMAIL.COM</p>
+                <button type="submit">
+                  get in touch
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        </Form>
       </div>
     </div>
   );

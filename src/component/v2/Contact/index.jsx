@@ -1,8 +1,29 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
 import Form from "react-bootstrap/Form";
 import "./index.css";
 
 export default function V2contact() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_w60s3hd",
+        "template_lsmeb2q",
+        e.target,
+        "L6s72OgQK1D51yCw1"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="v2about-item">
       <div className="v2about-column">
@@ -11,31 +32,36 @@ export default function V2contact() {
         </div>
         <div className="v2contact-box">
           <div className="v2contact-box-50">
-            <div className="v2contact-form">
-              <Form.Control
-                style={{ height: 46 }}
-                type="name"
-                className="v2contact-form-input"
-                placeholder="YOUR NAME"
-              />
-            </div>
-            <div className="v2contact-form">
-              <Form.Control
-                style={{ height: 46 }}
-                type="email"
-                className="v2contact-form-input"
-                placeholder="YOUR EMAIL"
-              />
-            </div>
-            <div className="v2contact-form">
-              <Form.Control
-                as="textarea"
-                rows={5}
-                className="v2contact-form-input"
-                placeholder="YOUR MESSAGE"
-              />
-            </div>
-            <button className="btn-sne">get in touch</button>
+            <Form onSubmit={sendEmail}>
+              <div className="v2contact-form">
+                <Form.Control
+                  style={{ height: 46 }}
+                  type="name"
+                  className="v2contact-form-input"
+                  placeholder="YOUR NAME"
+                  name="from_name"
+                />
+              </div>
+              <div className="v2contact-form">
+                <Form.Control
+                  style={{ height: 46 }}
+                  type="email"
+                  className="v2contact-form-input"
+                  placeholder="YOUR EMAIL"
+                  name="form_email"
+                />
+              </div>
+              <div className="v2contact-form">
+                <Form.Control
+                  as="textarea"
+                  rows={5}
+                  className="v2contact-form-input"
+                  placeholder="YOUR MESSAGE"
+                  name="message"
+                />
+              </div>
+              <button type="submit" className="btn-sne">get in touch</button>
+            </Form>
           </div>
           <div className="v2contact-box-50">
             <div className="v2contact-text">
@@ -44,7 +70,7 @@ export default function V2contact() {
               </p>
               <span>Straight shot to my inbox:</span>
               <p className="my-email">FADELPOPEYE@GMAIL.COM</p>
-              <button>get in touch</button>
+              <button type="submit">get in touch</button>
             </div>
           </div>
         </div>

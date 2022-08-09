@@ -291,6 +291,7 @@
     background: none;
     display: inline-block;
     position: relative;
+    transition: all 0.3s linear;
   }
   
   .tog-collapse span::before {

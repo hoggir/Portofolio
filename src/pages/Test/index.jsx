@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
-import Rocket from "../../assets/rocket.png";
+import Rocket from "../../assets/rocket1.png";
 import Form from "react-bootstrap/Form";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
@@ -20,6 +20,18 @@ export default function TestPage() {
   const [hireMeRight, setHireMeRight] = useState(
     "test-con-hireme-right hidden"
   );
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setTimeout(() => {
+      setIsOpen(isOpen);
+    }, 7000);
+  };
+
+  const timer = () => {
+    setIsOpen(!isOpen);
+    toggle();
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -73,7 +85,7 @@ export default function TestPage() {
         <div className="test-con">
           <div className={hireMeLeft}>
             <Form onSubmit={sendEmail}>
-              <div className="test-con-mail-form-con animate__animated animate__backInDown">
+              <div className="test-con-mail-form-con">
                 <Form.Control
                   style={{ height: 46 }}
                   type="name"
@@ -82,7 +94,7 @@ export default function TestPage() {
                   className="test-con-mail-form"
                 />
               </div>
-              <div className="test-con-mail-form-con animate__animated animate__backInLeft">
+              <div className="test-con-mail-form-con">
                 <Form.Control
                   style={{ height: 46 }}
                   type="name"
@@ -91,7 +103,7 @@ export default function TestPage() {
                   className="test-con-mail-form"
                 />
               </div>
-              <div className="test-con-mail-form-con animate__animated animate__backInRight">
+              <div className="test-con-mail-form-con">
                 <Form.Control
                   as="textarea"
                   rows={5}
@@ -101,7 +113,7 @@ export default function TestPage() {
                 />
               </div>
               <div className="test-con-mail-button-con">
-                <div className="test-con-left-action animate__animated animate__backInUp">
+                <div className="test-con-left-action">
                   <button onClick={backHomeBtn} className="test-btn-blur-bg">
                     home
                   </button>
@@ -115,35 +127,35 @@ export default function TestPage() {
           </div>
           <div className={hireMeRight}>
             <div className="test-con-hireme-right-con">
-              <p className="animate__animated animate__backInDown">
+              <p className="animate__animated">
                 I'm available to grab a coffee and chat! Drop a comment,
                 question, concern, or Spotify playlist, and thanks for stopping
                 by!
               </p>
-              <p className="animate__animated animate__backInRight">Find Me:</p>
+              <p className="animate__animated ">Find Me:</p>
               <div className="test-con-hireme-right-con-icon">
-                <div className="test-con-hireme-right-con-icon-25 animate__animated animate__backInDown">
+                <div className="test-con-hireme-right-con-icon-25">
                   <a href="https://github.com/hoggir">
                     <i>
                       <FaGithub />
                     </i>
                   </a>
                 </div>
-                <div className="test-con-hireme-right-con-icon-25 animate__animated animate__backInLeft">
+                <div className="test-con-hireme-right-con-icon-25">
                   <a href="https://fdportofolio.herokuapp.com/">
                     <i>
                       <FaFirefoxBrowser />
                     </i>
                   </a>
                 </div>
-                <div className="test-con-hireme-right-con-icon-25 animate__animated animate__backInRight">
+                <div className="test-con-hireme-right-con-icon-25">
                   <a href="https://twitter.com/FadelGiras">
                     <i>
                       <FaTwitter />
                     </i>
                   </a>
                 </div>
-                <div className="test-con-hireme-right-con-icon-25 animate__animated animate__backInUp">
+                <div className="test-con-hireme-right-con-icon-25">
                   <a href="https://www.instagram.com/">
                     <i>
                       <FaInstagram />
@@ -157,19 +169,15 @@ export default function TestPage() {
             <div className="test-con-left-con">
               <div className="test-con-left-con-100">
                 <div className="test-con-left-con-col">
-                  <h4 className="animate__animated animate__backInDown">
-                    hi there! i'm
-                  </h4>
-                  <h1 className="animate__animated animate__backInLeft">
-                    Fadel Giras
-                  </h1>
-                  <p className="animate__animated animate__backInRight">
+                  <h4 className="animate__animated">hi there! i'm</h4>
+                  <h1 className="animate__animated">Fadel Giras</h1>
+                  <p className="animate__animated">
                     I'm a web developer with a focus on the MERN stack, but
                     still exploring other technologies and frameworks that catch
                     my interest! if you're looking for a developer to add to
                     your team, I'd love to hear from you!
                   </p>
-                  <div className="test-con-left-action animate__animated animate__backInUp">
+                  <div className="test-con-left-action">
                     <a href="https://fdportofolio.herokuapp.com/">
                       <button className="test-btn-blur-bg">portfolio</button>
                     </a>
@@ -183,9 +191,12 @@ export default function TestPage() {
             </div>
           </div>
           <div className={containerRight}>
-            <div className="test-con-right-con">
-              <div className="test-con-right-con-imgcon animate__animated animate__backInUp">
-                <img className="test-con-right-con-img" src={Rocket} alt="" />
+            <div
+              onClick={timer}
+              className={isOpen ? "img-container active-con" : "img-container"}
+            >
+              <div className="rocket">
+                <img src={Rocket} alt="" />
               </div>
             </div>
           </div>

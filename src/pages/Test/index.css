@@ -136,28 +136,57 @@
     margin: 0 10px;
 }
 
-.test-con-right-con {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+.img-container {
+    position: relative;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: all 2.5s;
 }
 
-.test-con-right-con-imgcon {
-    height: 100%;
-    width: 100%;
-    transition: all 0.3s linear;
-    display: flex;
-    align-items: center;
-}
-
-.test-con-right-con-img {
+.rocket img {
+    transform: scale(0.8, 0.8);
     width: 100%;
 }
 
-.test-con-right-con-imgcon:hover {
-    transform: rotate(-33deg);
-    transition: all 0.3s linear;
+.rocket::before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    height: 0px;
+    width: 40px;
+    background: linear-gradient(#00d0ff, #00d0ff40, transparent);
+    transition: all 2.5s;
+}
+
+.rocket::after {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    height: 0px;
+    width: 50px;
+    background: linear-gradient(#00d0ff, #00d0ff40, transparent);
+    filter: blur(15px);
+    transition: all 2.5s;
+}
+
+.img-container.active-con {
+    bottom: 10%;
+}
+
+.img-container.active-con .rocket::before {
+    height: 200px;
+}
+
+.img-container.active-con .rocket::after {
+    height: 300px;
 }
 
 .test-con-mail-form-con {
@@ -237,6 +266,7 @@ textarea::-webkit-input-placeholder {
     .test-con-right {
         flex: 0 0 100%;
         max-width: 100%;
+        display: none;
     }
     
     .test-con-left-con-col {
@@ -278,4 +308,7 @@ textarea::-webkit-input-placeholder {
         height: 100%;
     }
     
+    .test-btn-blur-bg {
+        margin: 0 56px;
+    }
 }

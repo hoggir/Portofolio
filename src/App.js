@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<V2Home />} />
-        <Route exact path="/test" element={<TestPage />} />
+        <Route exact path="/landingpage" element={<TestPage />} />
       </Routes>
     </Router>
     </div>
